@@ -51,6 +51,17 @@ body {
   }
 }
 
+// Dotted map styles
+.dot {
+  animation: pulse 5s ease-in-out infinite;
+}
+
+.dot-wave-1 { animation-delay: 0s; }
+.dot-wave-2 { animation-delay: 1s; }
+.dot-wave-3 { animation-delay: 2s; }
+.dot-wave-4 { animation-delay: 3s; }
+.dot-wave-5 { animation-delay: 4s; }
+
 // Floating animation
 @keyframes float {
   0%, 100% {
@@ -58,6 +69,16 @@ body {
   }
   50% {
     transform: translateY(-10px);
+  }
+}
+
+// Dot pulse animation
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.4;
   }
 }
 
