@@ -1,0 +1,15 @@
+{
+  "name": "soterralabs-landing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "sass src/styles/main.scss dist/styles.css --style=compressed",
+    "build": "npm run build:css && mkdir -p dist && cp src/index.html dist/",
+    "dev": "sass src/styles/main.scss dist/styles.css --watch",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name=soterralabs-landing"
+  },
+  "devDependencies": {
+    "sass": "^1.71.0",
+    "wrangler": "^3.28.0"
+  }
+}
