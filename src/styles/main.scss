@@ -84,8 +84,8 @@ body {
   .block-#{$i} {
     // Random size between min and max
     $size: random($block-max-size - $block-min-size) + $block-min-size;
-    width: #{$size}px;
-    height: #{$size}px;
+    width: $size;
+    height: $size;
 
     // Random position (avoiding edges)
     $top-pos: random(80) + 5;
