@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // Variables
 $bg-gradient-start: #ffffff;
 $bg-gradient-mid: #f5f5f5;
@@ -82,8 +84,9 @@ body {
 // Generate randomized blocks
 @for $i from 1 through $block-count {
   .block-#{$i} {
-    // Random size between min and max
-    $size: random($block-max-size - $block-min-size) + $block-min-size;
+    // Random size between min and max (strip units for random(), then add back)
+    $size-range: math.div($block-max-size - $block-min-size, 1px);
+    $size: random($size-range) * 1px + $block-min-size;
     width: $size;
     height: $size;
 
