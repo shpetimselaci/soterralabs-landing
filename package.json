@@ -9,7 +9,7 @@
     "deploy": "npm run build && wrangler pages deploy dist --project-name=soterralabs-landing"
   },
   "devDependencies": {
-    "sass": "^1.71.0",
-    "wrangler": "^3.28.0"
+    "sass": "1.71.0",
+    "wrangler": "3.28.0"
   }
 }
