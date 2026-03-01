@@ -4,72 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soterra Labs</title>
+    <meta name="description" content="Soterra Labs - Software & Hardware Research">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 50%, #e8e8e8 100%);
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-        }
-
-        .container {
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .greeting {
-            font-size: clamp(2rem, 8vw, 4.5rem);
-            font-weight: 300;
-            color: rgba(160, 165, 175, 0.85);
-            letter-spacing: 0.02em;
-            margin-bottom: 0.2em;
-            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
-        }
-
-        .love {
-            font-size: clamp(1.2rem, 4vw, 2.5rem);
-            font-weight: 400;
-            color: rgba(140, 145, 155, 0.7);
-            letter-spacing: 0.05em;
-            margin-bottom: 4rem;
-        }
-
-        .contact {
-            margin-top: 2rem;
-        }
-
-        .contact p {
-            font-size: clamp(0.85rem, 2vw, 1rem);
-            font-weight: 400;
-            color: rgba(130, 135, 145, 0.6);
-            letter-spacing: 0.03em;
-            margin: 0.5em 0;
-        }
-
-        .contact a {
-            color: rgba(130, 135, 145, 0.7);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .contact a:hover {
-            color: rgba(100, 105, 115, 0.9);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- World Map Background -->
+    <div class="world-map">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid slice">
+            <path fill="currentColor" d="M165,125 Q180,100 220,105 T280,95 Q320,90 350,100 T400,95 Q430,100 450,120 T480,115 Q500,105 520,110 T550,100 L560,95 Q580,90 600,95 T640,90 Q660,95 680,100 L700,105 Q720,115 740,110 T780,120 Q800,130 820,125 L830,130 Q845,140 850,155 T840,180 Q830,200 810,210 T780,230 Q760,245 740,240 T700,250 Q680,260 660,255 T620,265 Q600,275 580,270 T540,280 Q520,290 500,285 T460,295 Q440,305 420,300 T380,310 Q360,315 340,310 T300,315 Q280,310 260,305 T220,310 Q200,305 180,295 T150,285 Q130,275 120,260 T115,235 Q110,215 115,195 T125,165 Q135,145 150,135 T165,125 Z M420,320 Q450,315 480,325 T540,320 Q570,330 590,345 T600,375 Q595,400 575,415 T530,425 Q500,420 475,410 T440,395 Q420,380 415,360 T420,320 Z M700,260 Q730,255 760,265 T810,275 Q840,290 855,315 T860,355 Q850,385 825,405 T775,420 Q745,415 720,400 T690,370 Q680,340 685,310 T700,260 Z M150,320 Q180,310 210,320 T260,330 Q285,345 295,370 T290,410 Q275,435 245,450 T190,455 Q160,445 140,425 T125,385 Q120,355 130,335 T150,320 Z"/>
+        </svg>
+    </div>
+
+    <!-- Floating Blocks -->
+    <div class="floating-blocks">
+        <div class="block block-1"></div>
+        <div class="block block-2"></div>
+        <div class="block block-3"></div>
+        <div class="block block-4"></div>
+        <div class="block block-5"></div>
+        <div class="block block-6"></div>
+        <div class="block block-7"></div>
+        <div class="block block-8"></div>
+        <div class="block block-9"></div>
+        <div class="block block-10"></div>
+        <div class="block block-11"></div>
+        <div class="block block-12"></div>
+    </div>
+
+    <!-- Content -->
     <div class="container">
         <h1 class="greeting">Welcome to Soterra Labs</h1>
         <p class="love">I love you</p>
